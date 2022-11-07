@@ -9,7 +9,8 @@ public class Ejercicio4 {
         por la cantidad total de factores.
         */
 
-        int valor_inicial = 0;
+        double suma =0; // Declaración de variable para realizar el cálculo.
+
 
         for (int i=1; i<=10; i++){
             int numero = 0;
@@ -17,9 +18,10 @@ public class Ejercicio4 {
             System.out.println("Introduce un número");
             numero = entrada.nextInt();
 
-            double suma = valor_inicial += numero;
-            System.out.println("Resultado suma " + suma);
+            suma=suma+numero; //Operación aritmética.
 
+            System.out.println("Resultado suma " + suma);
+            System.out.println("Resultado media "+ (suma/i));
 
         }
 
